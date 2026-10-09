@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Yon Sri Naqsya Bandi — Full Stack AI Engineer. Membangun pengalaman digital cerdas dengan AI dan teknologi web modern." />
+  <meta name="author" content="Yon Sri Naqsya Bandi" />
+  <meta name="theme-color" content="#0a0a1a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yon Sri Naqsya Bandi — Full Stack AI Engineer" />
+  <meta property="og:description" content="Membangun pengalaman digital cerdas dengan AI dan teknologi web modern." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.naqsya81.dev" />
+
+  <title>Yon Sri Naqsya Bandi — Full Stack AI Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+  <!-- Animated gradient background -->
+  <div class="bg-aurora" aria-hidden="true">
+    <span class="aurora-blob blob-1"></span>
+    <span class="aurora-blob blob-2"></span>
+    <span class="aurora-blob blob-3"></span>
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a href="#home" class="nav__brand" aria-label="Beranda">
+        <span class="brand-mark">YB</span>
+        <span class="brand-text">Naqsya<span class="accent">.dev</span></span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link active">Beranda</a></li>
+        <li><a href="#about" class="nav__link">Tentang</a></li>
+        <li><a href="#skills" class="nav__link">Keahlian</a></li>
+        <li><a href="#projects" class="nav__link">Proyek</a></li>
+        <li><a href="#experience" class="nav__link">Pengalaman</a></li>
+        <li><a href="#contact" class="nav__link">Kontak</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="#contact" class="btn btn--sm btn--primary">Hubungi</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero section" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow"><span class="pulse-dot"></span> Tersedia untuk proyek baru</p>
+          <h1 class="hero__title">
+            Halo, saya <span class="gradient-text">Yon Sri Naqsya Bandi</span>
+          </h1>
+          <h2 class="hero__role">
+            <span class="type-prefix">Seorang </span>
+            <span class="typed" id="typed"></span><span class="type-cursor">|</span>
+          </h2>
+          <p class="hero__tagline">
+            Membangun pengalaman digital cerdas dengan AI dan teknologi web modern.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">
+              Lihat Proyek <span class="btn__arrow">→</span>
+            </a>
+            <a href="#contact" class="btn btn--ghost">Mari Berkolaborasi</a>
+          </div>
+
+          <div class="hero__socials">
+            <a href="https://github.com/naqsya81-sys" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.47.1-3.06 0 0 .98-.31 3.2 1.18a11 11 0 0 1 5.82 0c2.22-1.5 3.2-1.18 3.2-1.18.63 1.6.23 2.76.11 3.06.75.81 1.2 1.84 1.2 3.1 0 4.43-2.71 5.4-5.28 5.69.42.36.79 1.07.79 2.16v3.2c0 .31.2.67.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/naqsya81" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+            </a>
+            <a href="https://x.com/naqsya81" target="_blank" rel="noopener" aria-label="Twitter / X" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.46l8.6-9.83L0 1.15h7.6l5.24 6.93 6.06-6.93Zm-1.3 19.5h2.04L6.49 3.24H4.3L17.6 20.65Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Floating code card -->
+        <div class="hero__visual reveal" data-delay="150">
+          <div class="float-card glass code-window">
+            <div class="code-window__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="code-window__title">developer.ts</span>
+            </div>
+            <pre class="code-window__body"><code><span class="c-key">const</span> <span class="c-var">engineer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">'Yon Sri Naqsya Bandi'</span>,
+  <span class="c-prop">role</span>: <span class="c-str">'Full Stack AI Engineer'</span>,
+  <span class="c-prop">location</span>: <span class="c-str">'Sidoarjo, ID'</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">'AI/ML'</span>, <span class="c-str">'React'</span>, <span class="c-str">'Node'</span>],
+  <span class="c-prop">passion</span>: <span class="c-str">'Intelligent UX'</span>,
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>,
+};</code></pre>
+          </div>
+
+          <div class="float-chip glass chip-1">⚡ 99+ Lighthouse</div>
+          <div class="float-chip glass chip-2">🤖 AI Powered</div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Gulir ke bawah">
+        <span class="mouse"><span class="wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">01</span>
+          <h2 class="section__title">Tentang Saya</h2>
+          <p class="section__subtitle">Perkenalan singkat tentang perjalanan saya.</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              Saya <strong>Yon Sri Naqsya Bandi</strong>, seorang
+              <strong>Full Stack AI Engineer</strong> yang berbasis di Sidoarjo, Indonesia.
+              Saya berfokus pada perpaduan antara kecerdasan buatan dan rekayasa web modern
+              untuk menciptakan produk digital yang cerdas, cepat, dan menyenangkan untuk digunakan.
+            </p>
+            <p>
+              Dari merancang arsitektur frontend yang bersih hingga mengintegrasikan model AI
+              ke dalam alur kerja produk, saya menikmati setiap bagian dari proses membangun.
+              Saya percaya pada kode yang rapi, desain yang berpusat pada manusia, dan detail
+              yang halus namun berdampak.
+            </p>
+
+            <div class="about__meta">
+              <div class="meta-item glass">
+                <span class="meta-label">Lokasi</span>
+                <span class="meta-value">Sidoarjo, Indonesia</span>
+              </div>
+              <div class="meta-item glass">
+                <span class="meta-label">Peran</span>
+                <span class="meta-value">Full Stack AI Engineer</span>
+              </div>
+              <div class="meta-item glass">
+                <span class="meta-label">Fokus</span>
+                <span class="meta-value">AI · Web Modern</span>
+              </div>
+              <div class="meta-item glass">
+                <span class="meta-label">Status</span>
+                <span class="meta-value">Terbuka untuk kerja</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__stats reveal" data-delay="150">
+            <div class="stat-card glass">
+              <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Tahun Pengalaman</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-num" data-count="40">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-num" data-count="25">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Klien Puas</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-num" data-count="12">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Model AI Terintegrasi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">02</span>
+          <h2 class="section__title">Keahlian</h2>
+          <p class="section__subtitle">Teknologi dan alat yang saya gunakan sehari-hari.</p>
+        </div>
+
+        <div class="skills__grid">
+          <article class="skill-card glass tilt reveal">
+            <div class="skill-card__icon">🧠</div>
+            <h3>AI &amp; Machine Learning</h3>
+            <p>Integrasi LLM, prompt engineering, computer vision, dan pipeline data.</p>
+            <ul class="tag-list">
+              <li>PyTorch</li><li>TensorFlow</li><li>LangChain</li><li>OpenAI</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass tilt reveal" data-delay="80">
+            <div class="skill-card__icon">🎨</div>
+            <h3>Frontend</h3>
+            <p>Antarmuka responsif, aksesibel, dan beranimasi halus.</p>
+            <ul class="tag-list">
+              <li>React</li><li>Next.js</li><li>TypeScript</li><li>Tailwind</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass tilt reveal" data-delay="160">
+            <div class="skill-card__icon">⚙️</div>
+            <h3>Backend</h3>
+            <p>API yang skalabel, aman, dan berperforma tinggi.</p>
+            <ul class="tag-list">
+              <li>Node.js</li><li>Python</li><li>FastAPI</li><li>PostgreSQL</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass tilt reveal" data-delay="240">
+            <div class="skill-card__icon">☁️</div>
+            <h3>Cloud &amp; DevOps</h3>
+            <p>Deployment otomatis, kontainerisasi, dan infrastruktur modern.</p>
+            <ul class="tag-list">
+              <li>AWS</li><li>Docker</li><li>CI/CD</li><li>Vercel</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Proficiency bars -->
+        <div class="skills__bars reveal">
+          <div class="bar-item">
+            <div class="bar-head"><span>AI / Machine Learning</span><span>92%</span></div>
+            <div class="bar"><span class="bar__fill" data-level="92"></span></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>Frontend Development</span><span>95%</span></div>
+            <div class="bar"><span class="bar__fill" data-level="95"></span></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>Backend Development</span><span>88%</span></div>
+            <div class="bar"><span class="bar__fill" data-level="88"></span></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>Cloud &amp; DevOps</span><span>84%</span></div>
+            <div class="bar"><span class="bar__fill" data-level="84"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">03</span>
+          <h2 class="section__title">Proyek Unggulan</h2>
+          <p class="section__subtitle">Beberapa karya yang paling saya banggakan.</p>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project-card glass reveal">
+            <div class="project-card__media" style="--accent:#7c3aed">
+              <span class="project-card__badge">AI SaaS</span>
+              <span class="project-card__glow"></span>
+              <span class="project-emoji">🤖</span>
+            </div>
+            <div class="project-card__body">
+              <h3>NeuraDesk</h3>
+              <p>Asisten dukungan pelanggan bertenaga LLM dengan basis pengetahuan yang dapat dilatih dan analitik real-time.</p>
+              <ul class="tag-list">
+                <li>Next.js</li><li>LangChain</li><li>Postgres</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#" class="link-arrow">Demo Langsung →</a>
+                <a href="#" class="link-arrow muted">Kode</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-delay="100">
+            <div class="project-card__media" style="--accent:#06b6d4">
+              <span class="project-card__badge">Computer Vision</span>
+              <span class="project-card__glow"></span>
+              <span class="project-emoji">👁️</span>
+            </div>
+            <div class="project-card__body">
+              <h3>VisionFlow</h3>
+              <p>Platform anotasi gambar dengan deteksi objek otomatis dan ekspor dataset satu klik.</p>
+              <ul class="tag-list">
+                <li>React</li><li>PyTorch</li><li>FastAPI</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#" class="link-arrow">Demo Langsung →</a>
+                <a href="#" class="link-arrow muted">Kode</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-delay="200">
+            <div class="project-card__media" style="--accent:#ec4899">
+              <span class="project-card__badge">Web App</span>
+              <span class="project-card__glow"></span>
+              <span class="project-emoji">📊</span>
+            </div>
+            <div class="project-card__body">
+              <h3>InsightBoard</h3>
+              <p>Dashboard analitik interaktif dengan prediksi tren berbasis machine learning.</p>
+              <ul class="tag-list">
+                <li>TypeScript</li><li>Node.js</li><li>D3.js</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#" class="link-arrow">Demo Langsung →</a>
+                <a href="#" class="link-arrow muted">Kode</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-delay="300">
+            <div class="project-card__media" style="--accent:#f59e0b">
+              <span class="project-card__badge">Mobile · AI</span>
+              <span class="project-card__glow"></span>
+              <span class="project-emoji">🗣️</span>
+            </div>
+            <div class="project-card__body">
+              <h3>EchoLingua</h3>
+              <p>Penerjemah suara real-time dengan model bahasa yang disetel untuk dialek lokal.</p>
+              <ul class="tag-list">
+                <li>React Native</li><li>Whisper</li><li>WebSocket</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#" class="link-arrow">Demo Langsung →</a>
+                <a href="#" class="link-arrow muted">Kode</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">04</span>
+          <h2 class="section__title">Pengalaman</h2>
+          <p class="section__subtitle">Perjalanan karier dan tonggak penting.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass">
+              <span class="timeline__date">2023 — Sekarang</span>
+              <h3>Lead AI Engineer</h3>
+              <span class="timeline__company">Nebula Labs</span>
+              <p>Memimpin tim lintas fungsi dalam membangun produk SaaS berbasis AI, dari arsitektur hingga peluncuran.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal" data-delay="100">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass">
+              <span class="timeline__date">2021 — 2023</span>
+              <h3>Full Stack Engineer</h3>
+              <span class="timeline__company">Quantum Studio</span>
+              <p>Mengembangkan aplikasi web end-to-end dan mengintegrasikan model machine learning ke dalam produk.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal" data-delay="200">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass">
+              <span class="timeline__date">2019 — 2021</span>
+              <h3>Frontend Developer</h3>
+              <span class="timeline__company">Pixel Forge</span>
+              <p>Membangun antarmuka yang responsif dan beranimasi untuk klien di berbagai industri.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">05</span>
+          <h2 class="section__title">Mari Terhubung</h2>
+          <p class="section__subtitle">Punya ide atau proyek? Saya senang mendengarnya.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <h3>Mari wujudkan sesuatu yang luar biasa bersama.</h3>
+            <p>Saya selalu terbuka untuk mendiskusikan peluang baru, kolaborasi, atau sekadar menyapa.</p>
+
+            <ul class="contact__list">
+              <li class="glass">
+                <span class="contact__ico">✉️</span>
+                <div><span class="contact__k">Email</span><a href="mailto:naqsya81@gmail.com">naqsya81@gmail.com</a></div>
+              </li>
+              <li class="glass">
+                <span class="contact__ico">📞</span>
+                <div><span class="contact__k">Telepon</span><a href="tel:08512345678">08512345678</a></div>
+              </li>
+              <li class="glass">
+                <span class="contact__ico">🌐</span>
+                <div><span class="contact__k">Website</span><a href="https://www.naqsya81.dev" target="_blank" rel="noopener">www.naqsya81.dev</a></div>
+              </li>
+              <li class="glass">
+                <span class="contact__ico">📍</span>
+                <div><span class="contact__k">Lokasi</span><span>Sidoarjo, Indonesia</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form glass reveal" data-delay="120" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama Anda" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ceritakan tentang proyek Anda..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Kirim Pesan <span class="btn__arrow">→</span></button>
+            <p class="form-note" id="formNote" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand-mark">YB</span>
+        <span>Yon Sri Naqsya Bandi</span>
+      </div>
+      <p class="footer__copy">© <span id="year"></span> Yon Sri Naqsya Bandi. Dibuat dengan ❤️ di Sidoarjo.</p>
+      <div class="footer__socials">
+        <a href="https://github.com/naqsya81-sys" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon sm">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.47.1-3.06 0 0 .98-.31 3.2 1.18a11 11 0 0 1 5.82 0c2.22-1.5 3.2-1.18 3.2-1.18.63 1.6.23 2.76.11 3.06.75.81 1.2 1.84 1.2 3.1 0 4.43-2.71 5.4-5.28 5.69.42.36.79 1.07.79 2.16v3.2c0 .31.2.67.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/naqsya81" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon sm">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="https://x.com/naqsya81" target="_blank" rel="noopener" aria-label="Twitter / X" class="social-icon sm">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.46l8.6-9.83L0 1.15h7.6l5.24 6.93 6.06-6.93Zm-1.3 19.5h2.04L6.49 3.24H4.3L17.6 20.65Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas">↑</button>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

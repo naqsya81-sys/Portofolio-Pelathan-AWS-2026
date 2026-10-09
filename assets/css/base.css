@@ -1,0 +1,143 @@
+/* ============================================================
+   base.css — Design tokens, reset, typography primitives
+   ============================================================ */
+
+:root {
+  /* Core palette */
+  --bg-0: #06060f;
+  --bg-1: #0a0a1a;
+  --bg-2: #0f1024;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-2: rgba(255, 255, 255, 0.07);
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  /* Text */
+  --text: #eef0ff;
+  --text-soft: #b9bcd6;
+  --text-mute: #7e82a3;
+
+  /* Accents */
+  --accent: #7c5cff;
+  --accent-2: #22d3ee;
+  --accent-3: #ec4899;
+  --accent-glow: rgba(124, 92, 255, 0.55);
+  --cyan-glow: rgba(34, 211, 238, 0.45);
+
+  /* Gradients */
+  --grad-primary: linear-gradient(135deg, #7c5cff 0%, #22d3ee 100%);
+  --grad-text: linear-gradient(120deg, #a78bfa 0%, #22d3ee 50%, #ec4899 100%);
+  --grad-border: linear-gradient(135deg, rgba(124,92,255,.6), rgba(34,211,238,.4));
+
+  /* Typography */
+  --font-head: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing & radius */
+  --container: 1200px;
+  --radius: 18px;
+  --radius-sm: 12px;
+  --radius-lg: 28px;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 24px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 16px 48px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 48px -8px var(--accent-glow);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 0.5s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-1);
+  color: var(--text);
+  line-height: 1.65;
+  font-size: 16px;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s var(--ease);
+}
+
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-0); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--accent), var(--accent-2));
+  border-radius: 10px;
+}
+
+/* Utility */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: clamp(20px, 5vw, 48px);
+}
+
+.gradient-text {
+  background: var(--grad-text);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer 6s linear infinite;
+}
+
+.accent { color: var(--accent-2); }
+
+/* Glassmorphism base */
+.glass {
+  background: var(--surface);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
